@@ -80,7 +80,7 @@ function bs_badge($atts, $content = null) {
     ), $atts );
     
     if($a['color']) {
-        $style = 'color:' . $a['color'];
+        $style = 'background-color:' . $a['color'];
     }
     
     ob_start();
