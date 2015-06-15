@@ -184,3 +184,47 @@ function bs_pane($atts, $content = null) {
     ), $atts);
 }
 add_shortcode('bs_pane', 'bs_pane');
+
+/**
+ * 
+ * @param type $atts
+ * @param type $content
+ */
+function bs_row($atts, $content = null) {
+    ob_start();
+?>
+<div class="row">
+    <?php echo do_shortcode($content); ?>
+</div>
+<?php
+    return ob_get_clean();
+}
+add_shortcode('bs_row', 'bs_row');
+
+/**
+ * 
+ * @param type $atts
+ * @param type $content
+ */
+function bs_col($atts, $content = null) {
+    
+    $a = shortcode_atts( array(
+        'cols' => 1,
+        'offset' => false
+    ), $atts);
+    
+    $offset = '';
+    
+    if($a['offset']) {
+        $offset .= ' col-sm-offset-' . $a['offset'];
+    }
+    
+    ob_start();
+?>
+<div class="col-xs-1 col-sm-<?php echo $a['cols'] . $offset; ?>">
+    <?php echo do_shortcode($content); ?>
+</div>
+<?php    
+    return ob_get_clean();
+}
+add_shortcode('bs_col', 'bs_col');

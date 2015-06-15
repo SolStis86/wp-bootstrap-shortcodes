@@ -1,9 +1,28 @@
 # wp-bootstrap-shortcodes
-A set of shortcodes for use in wordpress that create Twitter Bootstrap components.
+A set of shortcodes for use in WordPress that create Twitter Bootstrap components.
 
 This is an ongoing bit of work which i will add to gradually.  Requests Welcome!
 
 <h2>Current Shortcodes:</h2>
+
+<h3>[bs_row]</h3>
+Attributes: 
+```
+[bs_row]Row content[/bs_row]
+
+```
+
+<h3>[bs_col]</h3>
+Attributes: cols (integer 1-12)
+            offset (integer 1-11)
+```
+[bs_row]
+    [bs_col cols="4"][/bs_col]
+    [bs_col cols="4"][/bs_col]
+    [bs_col cols="2" offset="2"][/bs_col]
+[/bs_row]
+
+```
 
 <h3>[bs_badge]</h3>
 Attributes: color [hex code]
