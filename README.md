@@ -18,3 +18,35 @@ Attributes: type [default | primary | success | info | warning | danger]
 [bs_label]This is a default label[/bs_label]
 [bs_label type="warning"]This is a warning label[/bs_label]
 ```
+
+<h3>[bs_well]</h3>
+Attributes: size [lg | sm]
+```
+[bs_well]This is a standard well[/bs_well]
+[bs_well size="sm"]This is a small well[/bs_well]
+```
+
+<h3>[bs_panel]</h3>
+Attributes: type [default | primary | success | info | warning | danger]
+            title (string)
+```
+[bs_panel]This is a panel with no title or context...[/bs_panel]
+[bs_panel type="danger" title="Panel Title"]This is the content of this panel with a title and context[/bs_panel]
+```
+
+<h3>[bs_tabs] <small>- [bs_pane]</small></h3>
+
+Attributes: type [tabs | pills]
+            stacked [false | true]
+            justified [false | true]
+```
+[bs_tabs]
+[bs_pane title="First Panel Title"]First panel content...[/bs_pane]
+[bs_pane title="Second Panel Title"]Second panel content...[/bs_pane]
+[/bs_tabs]
+
+[bs_tabs type="pills" stacked="true" justified="false"]
+    [bs_pane title="First Panel Title"]First panel content...[/bs_pane]
+    [bs_pane title="Second Panel Title"]Second panel content...[/bs_pane]
+[/bs_tabs]
+```
