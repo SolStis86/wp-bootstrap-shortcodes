@@ -60,8 +60,8 @@ Attributes: type [tabs | pills]
             justified [false | true]
 ```
 [bs_tabs]
-[bs_pane title="First Panel Title"]First panel content...[/bs_pane]
-[bs_pane title="Second Panel Title"]Second panel content...[/bs_pane]
+    [bs_pane title="First Panel Title"]First panel content...[/bs_pane]
+    [bs_pane title="Second Panel Title"]Second panel content...[/bs_pane]
 [/bs_tabs]
 
 [bs_tabs type="pills" stacked="true" justified="false"]
